@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+  </head>
+  <body>
+    <form
+      action="mailto:polatsfekaya@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="isim">İsim</label></td>
+            <td><input type="text" name="isim" id="isim" /></td>
+          </tr>
+          <tr>
+            <td><label for="soyisim">Soyisim</label></td>
+            <td><input type="text" name="soyisim" id="soyisim" /></td>
+          </tr>
+          <tr>
+            <td><label for="message">Mesajınız</label></td>
+            <td>
+              <textarea
+                name="message"
+                id="message"
+                cols="19"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">E-Posta</label></td>
+            <td><input type="email" name="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="dosya">Dosya</label></td>
+            <td>
+              <input type="file" name="dosya" id="dosya" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Gönder" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <br />
+  </body>
+</html>
