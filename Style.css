@@ -8,8 +8,34 @@ body {
   padding: 0;
 }
 
-#isim {
+#hikaye {
+  background: var(--main-dark-color);
   font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 60px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 50vh;
+  box-shadow: 0px 0px 20px #b5b0ff;
+}
+
+#hikaye p {
+  color: rgb(208, 252, 255);
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 90%;
+}
+
+#isim {
+  position: relative;
+  color: rgb(177, 250, 255);
+  top: 50px;
+  margin-left: 45px;
+  font-size: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #navbut {
@@ -69,6 +95,7 @@ body {
   width: 100%;
   min-height: 45vh;
   text-align: center;
+  box-sizing: border-box;
 }
 
 #baslik {
@@ -76,11 +103,12 @@ body {
   color: #f1f4df;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bolder;
-  top: 9%;
+  top: 10%;
   left: 0;
   width: 100%;
+  animation: baslik 1s ease 1;
 }
 
 #basliksol,
@@ -111,14 +139,15 @@ body {
   height: 45vh;
   background: linear-gradient(#fe8c00, #fe8c00, #fe8c00, #fe8c00, #f83600);
   z-index: -1;
-  animation: baslik 1s ease 1;
 }
 
 @keyframes baslik {
   0% {
-    background: linear-gradient(#f83600);
+    top: 8%;
+    color: rgba(255, 255, 255, 0);
   }
   100% {
-    background: linear-gradient(#fe8c00, #fe8c00, #fe8c00, #fe8c00, #f83600);
+    top: 10%;
+    color: #f1f4df;
   }
 }
