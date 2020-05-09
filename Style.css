@@ -60,7 +60,7 @@ body {
 #navbut h1 {
   position: relative;
   width: 100%;
-  margin: auto 0;
+  margin: auto;
   height: 100%;
   color: #eeeeee;
   font-weight: bold;
