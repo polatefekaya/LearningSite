@@ -19,7 +19,7 @@ body {
   height: 100px;
   box-sizing: border-box;
   padding: 0;
-  margin-top: -22px;
+  top: -22px;
   text-align: center;
   background: linear-gradient(#fe8c00, #ff4e1d);
   box-shadow: 0px 0px 20px #ffa02c;
@@ -35,7 +35,7 @@ body {
   }
 
   100% {
-    top: 0px;
+    top: -22px;
   }
 }
 
