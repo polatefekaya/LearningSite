@@ -44,7 +44,7 @@ body {
 @keyframes bisiklet {
   0% {
     opacity: 0%;
-    top: -10px;
+    top: -30px;
   }
 
   100% {
@@ -74,7 +74,7 @@ body {
   color: var(--dark-color);
   border-bottom: 5px dashed var(--dark-color);
   box-shadow: 0px 0px 20px #dbfff7;
-  animation: bisiklet 0.5s ease 1s forwards;
+  animation: bisiklet 0.5s ease 0.6s forwards;
 }
 
 #bisiklet h1,
@@ -110,7 +110,7 @@ body {
   color: var(--dark-color);
   border-bottom: 5px dashed var(--dark-color);
   box-shadow: 0px 0px 20px #dbfff7;
-  animation: bisiklet 0.5s ease 1.15s forwards;
+  animation: bisiklet 0.5s ease 0.65s forwards;
 }
 
 #yuzme {
@@ -126,5 +126,5 @@ body {
   border-bottom: 5px dashed var(--dark-color);
   box-shadow: 0px 0px 20px #dbfff7;
   margin-bottom: 50px;
-  animation: bisiklet 0.5s ease 1.3s forwards;
+  animation: bisiklet 0.5s ease 0.7s forwards;
 }
