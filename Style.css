@@ -69,7 +69,7 @@ body {
   background: #f83600;
   margin-left: 174px;
 
-  z-index: 2;
+  z-index: 3;
 }
 
 #navbut h1 {
@@ -106,7 +106,7 @@ body {
   width: 175px;
   height: 250px;
   left: -175px;
-  z-index: 2;
+  z-index: 3;
   margin-top: 20px;
 }
 

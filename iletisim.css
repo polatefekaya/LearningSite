@@ -1,0 +1,144 @@
+:root {
+  --dark-color: rgb(5, 3, 24);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eff8ff;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#baslik {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 0;
+  top: -22px;
+  text-align: center;
+  background: linear-gradient(#fe8c00, #ff4e1d);
+  box-shadow: 0px 0px 20px #ffa02c;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  animation: baslik 1s ease;
+  /* border-top: 5px dashed var(--dark-color); */
+}
+
+@keyframes baslik {
+  0% {
+    box-shadow: 0px 0px 0px #ffa02c;
+    top: -150px;
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px #ffa02c;
+    top: -22px;
+  }
+}
+
+#iletisimyazi {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+
+  top: 25px;
+  color: var(--dark-color);
+}
+
+#isimlabel,
+#emaillabel,
+#messagelabel,
+#dosyalabel {
+  margin-top: 75px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+#isim,
+#email,
+#message {
+  padding: 0;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background: rgba(0, 255, 242, 0.15);
+  box-shadow: 0;
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(54, 54, 54);
+
+  font-size: 1.5rem;
+}
+#emaillabel,
+#messagelabel,
+#dosyalabel {
+  margin-top: 30px;
+}
+#email {
+  width: 80%;
+}
+#message {
+  border-radius: 40px;
+  height: 150px;
+  width: 90%;
+}
+
+#isim:hover,
+#email:hover,
+#message:hover,
+#dosya:hover {
+  box-shadow: 0px 0px 20px #dbfff7;
+}
+
+.dosya {
+  text-align: center;
+  padding: 0;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 20px;
+  height: 30px;
+  width: 200px;
+}
+.dosya::-webkit-file-upload-button {
+  visibility: hidden;
+  text-align: center;
+  position: relative;
+}
+.dosya::before {
+  content: "";
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  background: rgba(0, 255, 242, 0.15);
+  border: 0;
+  border-radius: 20px;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(54, 54, 54);
+  font-size: 1rem;
+}
+.dosya:hover::before {
+  box-shadow: 0px 0px 20px #dbfff7;
+}
+.dosya:active::before {
+  box-shadow: 0px 0px 20px #dbfff7;
+}
