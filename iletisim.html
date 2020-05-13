@@ -15,15 +15,25 @@
       method="post"
       enctype="text/plain"
     >
-      <label for="isim" id="isimlabel">Ad-Soyad</label>
-      <input type="text" name="isim" id="isim" />
-      <label for="email" id="emaillabel">E-Posta</label>
-      <input type="email" name="email" id="email" />
-      <label for="message" id="messagelabel">Mesajınız</label>
-      <textarea name="message" id="message" cols="19" rows="10"></textarea>
-      <label for="dosya" id="dosyalabel">Dosya</label>
-      <input type="file" name="dosya" class="dosya" />
-      <input type="submit" value="Gönder" id="gonder" />
+      <div id="isimtoplu">
+        <label for="isim" id="isimlabel">Ad-Soyad</label>
+        <input type="text" name="isim" id="isim" />
+      </div>
+      <div id="emailtoplu">
+        <label for="email" id="emaillabel">E-Posta</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div id="messagetoplu">
+        <label for="message" id="messagelabel">Mesajınız</label>
+        <textarea name="message" id="message" cols="19" rows="10"></textarea>
+      </div>
+      <div id="dosyatoplu">
+        <label for="dosya" id="dosyalabel">Dosya</label>
+        <input type="file" name="dosya" class="dosya" />
+      </div>
+      <div id="gondertoplu">
+        <input type="submit" value="Gönder" id="gonder" />
+      </div>
     </form>
   </body>
 </html>

@@ -54,11 +54,13 @@ body {
 
 @keyframes elementler {
   0% {
+    z-index: 0;
     position: relative;
     top: -30px;
     opacity: 0%;
   }
   100% {
+    z-index: 0;
     position: relative;
     top: 0;
     opacity: 100;
@@ -74,30 +76,27 @@ body {
   color: var(--dark-color);
 }
 
-#isim,
-#isimlabel {
+#isimtoplu {
   opacity: 0;
-  animation: elementler 0.5s ease 0.6s forwards;
-}
-#email,
-#emaillabel {
-  opacity: 0;
-  animation: elementler 0.5s ease 0.65s forwards;
-}
-#message,
-#messagelabel {
-  opacity: 0;
-  animation: elementler 0.5s ease 0.7s forwards;
-}
-#dosyalabel,
-.dosya {
-  opacity: 0;
-  animation: elementler 0.5s ease 0.75s forwards;
+  animation: elementler 0.6s ease 0.6s forwards;
 }
 
-#gonder {
+#emailtoplu {
   opacity: 0;
-  animation: elementler 0.5s ease 0.8s forwards;
+  animation: elementler 0.6s ease 0.65s forwards;
+}
+#messagetoplu {
+  opacity: 0;
+  animation: elementler 0.6s ease 0.7s forwards;
+}
+#dosyatoplu {
+  opacity: 0;
+  animation: elementler 0.6s ease 0.75s forwards;
+}
+
+#gondertoplu {
+  opacity: 0;
+  animation: elementler 0.6s ease 0.8s forwards;
 }
 
 textarea:focus,
